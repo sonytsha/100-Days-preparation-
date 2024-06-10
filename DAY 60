@@ -3,3 +3,39 @@ https://www.geeksforgeeks.org/max-heap-in-java/
 
 https://leetcode.com/problems/kth-largest-element-in-an-array/
 https://www.geeksforgeeks.org/problems/kth-smallest-element5635/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=kth-smallest-element
+
+heap :
+https://leetcode.com/problems/top-k-frequent-elements/
+https://leetcode.com/problems/find-k-closest-elements/
+https://leetcode.com/problems/height-checker/
+
+
+
+
+class Solution {
+    public int[] topKFrequent(int[] nums, int k) {
+    int n = nums.length;
+     Map<Integer, Integer> mp = new HashMap<Integer, Integer>();
+        for (int i = 0; i < N; i++) {
+            mp.put(arr[i], mp.getOrDefault(arr[i], 0) + 1);
+        }
+PriorityQueue<Map.Entry<Integer, Integer> > queue = new PriorityQueue<>(
+                (a, b) -> a.getValue().equals(b.getValue())
+                           ? Integer.compare(b.getKey(),
+                                             a.getKey())
+                           : Integer.compare(b.getValue(),
+                                             a.getValue()));
+
+        // Insert the data from the map
+        // to the Priority Queue.
+        for (Map.Entry<Integer, Integer> entry :
+             mp.entrySet())
+            queue.offer(entry);
+
+        // Print the top k elements
+        for (int i = 0; i < K; i++) {
+            System.out.print(queue.poll().getKey() + " ");
+        }
+    }
+}
+https://leetcode.com/problems/top-k-frequent-elements/
