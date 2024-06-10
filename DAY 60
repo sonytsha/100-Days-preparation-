@@ -41,3 +41,5 @@ PriorityQueue<Map.Entry<Integer, Integer> > queue = new PriorityQueue<>(
 https://leetcode.com/problems/top-k-frequent-elements/
 
 
+https://leetcode.com/problems/k-closest-points-to-origin/description/
+https://www.geeksforgeeks.org/problems/sum-of-elements-between-k1th-and-k2th-smallest-elements3133/0
